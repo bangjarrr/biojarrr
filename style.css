@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;700&family=Poppins:wght@100;300;700&display=swap");
+
+:root {
+  --para-font: #928d8daa;
+  --black: #222222;
+  --grey: #303030;
+  --bg: #fff;
+  --white: #6b6363;
+  --hover: #454545;
+  --purple: #e600ff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  color: var(--bg);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--white);
+}
+
+header {
+  background-color: #333;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 15px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.bio-section {
+  display: flex;
+  margin: 2em;
+}
+
+.profile-picture img {
+  border: 2px solid var(--purple);
+  box-shadow: 2px 2px 30px var(--purple);
+  max-width: 40%;
+  border-radius: 50%;
+}
+
+.profile-picture img:hover {
+  transform: scale(1.08);
+  transition: all;
+  transition-duration: 1.2s;
+}
+
+.bio-info {
+  text-align: start;
+  margin-left: -30%;
+}
+
+.bio-info h2,
+p {
+  margin: 15px 0px;
+}
+
+.bio-info h2,
+h3 {
+  text-shadow: 2px 2px 5px var(--purple);
+}
+
+.bio-info h3 {
+  text-align: center;
+  margin: 30px 0px;
+}
+
+.bio-info .sosmed a {
+  margin: 10px;
+}
+
+.bio-info ul {
+  text-align: center;
+  list-style: none;
+}
+.bio-info ul .bio-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20rem;
+  background: var(--grey);
+  border-radius: 20px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.bio-info ul :hover {
+  transform: scale(1.05);
+  transition: all;
+  transition-duration: 1.2s;
+}
+
+.bio-info ul .bio-link a {
+  margin: 0px 20px;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #333;
+  color: #fff;
+}
+
+footer a {
+    text-decoration: none;
+    border-bottom: 2px solid #000;
+}
+
+@media screen and (max-width: 767px) {
+  .profile-picture {
+    text-align: center;
+  }
+
+  .bio-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-picture img {
+    margin-bottom: 1em;
+  }
+
+  .bio-info {
+    margin: 0;
+    text-align: start;
+  }
+
+  .bio-info ul .bio-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 80px;
+    padding: 15px 30px;
+    background: #333;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .bio-info ul .bio-link a {
+    margin: 0px 5px;
+    text-decoration: none;
+  }
+}
