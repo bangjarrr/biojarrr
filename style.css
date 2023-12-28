@@ -74,7 +74,8 @@ h3 {
 }
 
 .bio-info .sosmed a {
-  margin: 10px;
+  padding-top: 100px;
+  margin: 40px 10px;
 }
 
 .bio-info ul {
