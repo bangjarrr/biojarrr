@@ -31,8 +31,11 @@ header {
   font-size: 15px;
 }
 
-header h1 {
+header a {
   margin: 0;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 900;
 }
 
 .bio-section {
@@ -112,10 +115,6 @@ footer {
   color: #fff;
 }
 
-footer a {
-    text-decoration: none;
-    border-bottom: 2px solid #000;
-}
 
 @media screen and (max-width: 767px) {
   .profile-picture {
